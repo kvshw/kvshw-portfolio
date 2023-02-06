@@ -8,7 +8,7 @@
 .kvshw__header_inner-div {
     display: grid;
     width: 100vw;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
 }
 
 .kvshw__header_inner-div_left {
@@ -26,34 +26,47 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3.2rem;
+    font-size: 4rem;
 }
 
 .kvshw__header_inner-div_left h2 {
     color: #fff;
-    font-weight: 300;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 2.5rem;
 }
 
 .kvshw__header_inner-div_left p {
     margin-top: 1rem;
     color: #fff;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 30px;
+    width: 450px;
+}
+
+.kvshw__header_inner-div_left h4 {
+    margin-top: 2rem;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.4rem;
     line-height: 22px;
-    width: 420px;
+
 }
 
 .kvshw__header_inner-div_left .contact_btn a {
     background: var(--gradient-text);
     background-clip: text;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 3rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     list-style: none;
     text-decoration: none;
+}
+
+.kvshw__header_inner-div_social {
+    margin-right: 8rem;
 }
 
 .kvshw__header_inner-div_right {
@@ -63,5 +76,5 @@
 }
 
 .social_icons {
-    padding: 1rem 2rem;
+    margin: 1rem 2rem;
 }
