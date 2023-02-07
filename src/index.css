@@ -2,6 +2,7 @@
     --font-family: 'Helvetica', sans-serif;
 
     --gradient-text: linear-gradient(89.97deg, #FF27DD 1.84%, #433AD1 102.67%);
+    --gradient-text-rev: linear-gradient(89.97deg, #433AD1 1.84%, #FF27DD 102.67%);
     --gradient-bar: linear-gradient(103.22deg, #FF27DD -13.86%, #433ad1 99.55%);
     --gradient-btn: linear-gradient(103.22deg, #FF27DD -13.86%, #433AD1 99.55%);
     --gradient-btn-rev: linear-gradient(103.22deg, #433AD1 -13.86%, #FF27DD 99.55%);

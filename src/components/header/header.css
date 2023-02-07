@@ -27,7 +27,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
+
 }
+
+/* .kvshw__header_inner-div_left h1:hover {
+    background: var(--gradient-text-rev);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+} */
 
 .kvshw__header_inner-div_left h2 {
     color: #fff;

@@ -46,8 +46,8 @@ const Header = () => {
                 <div className='kvshw__header_inner-div_left'>
                     <h1>Kavishwa Wendakoon</h1>
                     <h2>Welcome to my Portfolio</h2>
-                    <p>My mission is to invoke a change insociety using the knowledge I gained throughout last few years </p>
-                    <h4 className='contact_btn'><a href='#'>Contact me &gt; </a></h4>
+                    <p>My mission is to invoke a change in society using the knowledge I gained throughout last few years </p>
+                    <h4 className='contact_btn'><a href='#'>About me &gt; </a></h4>
                 </div>
                 <div className='kvshw__header_inner-div_right'>
                     <div className='kvshw__header_inner-div_social'>

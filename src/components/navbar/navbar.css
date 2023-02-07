@@ -40,3 +40,8 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+.resume {
+    cursor: pointer;
+    cursor: url(../../assets//pointer.png), auto !important;
+}
