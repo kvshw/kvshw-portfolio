@@ -51,7 +51,7 @@ const Header = () => {
                 </div>
                 <div className='right__main'>
                     <div className='upcoming__features'>
-                        <h3>Upcoming Additions</h3>
+                        <h3>Development Roadmap</h3>
                         <ul>
 
                             <li>--&gt; GitHub + Netlify &#9989;</li>
