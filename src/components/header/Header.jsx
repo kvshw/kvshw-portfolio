@@ -59,8 +59,8 @@ const Header = () => {
                             <li>--&gt; Homepage &#9989;</li>
                             <li>--&gt; Cursor change &#9989;</li>
                             <li>--&gt; Resume Downloading &#9989;</li>
-                            <li>--&gt; About Section <span className='in-progress'>in progress</span></li>
-                            <li>--&gt; Portfolio Section</li>
+                            <li>--&gt; About Section </li>
+                            <li>--&gt; Portfolio Section <span className='in-progress'>in progress</span></li>
                             <li>--&gt; Blog with Prisma</li>
                             <li>--&gt; Contact me Section</li>
                             <li>--&gt; Internal Routing </li>
