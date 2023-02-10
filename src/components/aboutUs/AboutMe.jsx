@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-// import headerImg from '../../assets/kvshw.png'
-import './header.css';
+import React, { useState } from 'react'
 import GitHub from '../../assets/github 1.png'
 import GitHub2 from '../../assets/github 2.png'
 import LinkedIn from '../../assets/linkedin 1.png'
@@ -9,6 +7,8 @@ import Facebook from '../../assets/facebook 1.png'
 import Facebook2 from '../../assets/facebook 2.png'
 import Twitter from '../../assets/twitter 2.png'
 import Twitter2 from '../../assets/twitter 3.png'
+
+import './aboutme.css';
 
 const useImageChangeOnHover = (defaultSource, hoverSource) => {
     const [source, setSource] = useState(defaultSource);
@@ -37,36 +37,19 @@ const ImageChangeOnHover = ({ defaultSource, hoverSource, link }) => {
         </a>
     );
 };
-
-const Header = () => {
-
+const Aboutus = () => {
     return (
-        <div className='kvshw__header' style={{ backgroundImage: 'url(' + require('../../assets/kvshw.png') + ')', height: "90vh", }} >
+        <div className='kvshw__header' style={{ backgroundImage: 'url(' + require('../../assets/space-about.png') + ')', height: "90vh", backgroundPosition: "right 0%", backgroundRepeat: "no-repeat" }} >
             <div className='kvshw__header_inner-div'  >
                 <div className='kvshw__header_inner-div_left'>
-                    <h1>Kavishwa Wendakoon</h1>
-                    <h2>Welcome to my Portfolio</h2>
-                    <p>My mission is to invoke a change in society using the knowledge I gained throughout last few years </p>
-                    <h4 className='contact_btn'><a href='#'>About me &gt; </a></h4>
+                    <h1>About me</h1>
+                    {/* <h2>Welcome to my Portfolio</h2> */}
+                    <p>Hi there! My name is Kavishwa and I am a skilled software engineer and social media marketer with over 3 years of experience in the industry. I have a strong background in both front-end and back-end development, as well as a deep understanding of social media platforms and how to effectively market products and services on them. I am always seeking new challenges and opportunities to grow my skills and help businesses succeed.</p>
+                    {/* <h4 className='contact_btn'><a href='#'>About me &gt; </a></h4> */}
                 </div>
                 <div className='right__main'>
-                    <div className='upcoming__features'>
-                        <h3>Development Roadmap</h3>
-                        <ul>
+                    <div className='upcoming__features-about'>
 
-                            <li>--&gt; GitHub + Netlify &#9989;</li>
-                            <li>--&gt; Navigation &#9989;</li>
-                            <li>--&gt; Homepage &#9989;</li>
-                            <li>--&gt; Cursor change &#9989;</li>
-                            <li>--&gt; Resume Downloading &#9989;</li>
-                            <li>--&gt; About Section <span className='in-progress'>in progress</span></li>
-                            <li>--&gt; Portfolio Section</li>
-                            <li>--&gt; Blog with Prisma</li>
-                            <li>--&gt; Contact me Section</li>
-                            <li>--&gt; Internal Routing </li>
-                            <li>--&gt; Horizontal Scrolling & Parallex</li>
-                            <li>--&gt; Admin dashboard/CMS </li>
-                        </ul>
                     </div>
                     <div className='kvshw__header_inner-div_right'>
                         <div className='kvshw__header_inner-div_social'>
@@ -82,4 +65,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Aboutus

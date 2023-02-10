@@ -50,7 +50,7 @@
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 30px;
-    width: 650px;
+    width: 700px;
 }
 
 .kvshw__header_inner-div_left h4 {
@@ -93,11 +93,11 @@
     margin: 1rem 2rem;
 }
 
-.upcoming__features {
-    margin: 2rem 10rem 2rem 2rem;
+.upcoming__features-about {
+    /* margin: 2rem 10rem 2rem 2rem;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23FF27DDFF' stroke-width='5' stroke-dasharray='6%2c 14' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 13px;
-    padding: 1rem 4rem;
+    padding: 1rem 4rem; */
     height: 70vh;
 }
 
