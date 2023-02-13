@@ -11,6 +11,10 @@
     grid-template-columns: 60% 40%;
 }
 
+.divs {
+    height: auto;
+}
+
 .kvshw__header_inner-div_left {
     flex: 1 1;
     display: flex;
