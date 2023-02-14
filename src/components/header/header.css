@@ -1,4 +1,4 @@
-.kvshw__header {
+/* .kvshw__header {
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -34,13 +34,7 @@
 
 }
 
-/* .kvshw__header_inner-div_left h1:hover {
-    background: var(--gradient-text-rev);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 4rem;
-} */
+
 
 .kvshw__header_inner-div_left h2 {
     color: #fff;
@@ -135,4 +129,4 @@ li {
     border-radius: 4px;
     font-size: 12px;
 
-}
+} */
