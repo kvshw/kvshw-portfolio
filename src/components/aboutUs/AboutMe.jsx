@@ -7,16 +7,17 @@ import Socialicons from '../socialIcons/Socialicons';
 const Aboutus = () => {
     return (
         <>
-
-            <div className='h-[84vh] w-screen grid  bg-[-35vw] bg-no-repeat bg-about-me-mobile sm:h-[82vh] sm:bg-right md:hidden'  >
-                <div className='flex flex-col justify-center items-center '>
-                    <h1 className='text-transparent text-center bg-gradient-to-r from-[#FF27DD] to-[#433AD1] bg-clip-text text-2xl font-bold sm:text-4xl'>About Me</h1>
-                    {/* <h2 className='text-white text-lg sm:text-3xl'>Hey</h2> */}
-                    <p className='text-white text-center px-8 py-2 text-sm sm:text-lg'>xyz</p>
-                    <Socialicons />
+            <div className='overflow-y-scroll '>
+                <div className='h-[84vh] w-screen grid  bg-[-35vw] bg-no-repeat bg-about-me-mobile sm:h-[82vh] sm:bg-right md:hidden'  >
+                    <div className='flex flex-col justify-center items-center '>
+                        <h1 className='text-transparent text-center bg-gradient-to-r from-[#FF27DD] to-[#433AD1] bg-clip-text text-2xl font-bold sm:text-4xl'>About Me</h1>
+                        {/* <h2 className='text-white text-lg sm:text-3xl'>Hey</h2> */}
+                        <p className='text-white text-center px-8 py-2 text-sm sm:text-lg'>Hi there! My name is Kavishwa and I am a skilled software engineer and social media marketer with over 5 years of experience in the industry. I have a strong background in both front-end and back-end development, as well as a deep understanding of social media platforms and how to effectively market products and services on them.</p>
+                        <Socialicons />
+                    </div>
                 </div>
-            </div>
 
+            </div>
             <div className='md:grid md:grid-cols-2 md:w-screen md:overflow-x-scroll md:snap-x md:snap-mandatory'>
                 <div className=' md:snap-start hidden sm:hidden md:grid md:grid-cols-[65%_35%] w-screen  md:text-white md:bg-about-me md:h-[88vh] md:bg-right md:bg-cover'>
                     <div className='flex flex-col md:justify-center md:pl-[15vw]'>
