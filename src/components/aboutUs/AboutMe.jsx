@@ -31,8 +31,10 @@ const Aboutus = () => {
                 <div className='h md:snap-start hidden sm:hidden md:grid md:grid-cols-[65%_35%] w-screen ml-[50vw] md:text-white md:bg-technology md:h-[88vh] md:bg-right md:bg-cover'>
                     <div className='flex flex-col md:justify-center md:pl-[15vw]'>
                         <h1 className='md:text-transparent md:text-left md:bg-gradient-to-r md:from-[#FF27DD] md:to-[#433AD1] md:bg-clip-text md:text-5xl md:font-bold '>Technologies</h1>
-                        {/* <h2 className='text-white md:text-3xl md:mt-3'>Welcome to my Portfolio</h2> */}
-                        <p className='text-white md:text-left  md:text-lg md:w-[35vw] md:mt-3 md:font-light'>xyz</p>
+                        <h2 className='text-white md:text-xl md:mt-3'>Front-End Development</h2>
+                        <p className='text-white md:text-left  md:text-md md:w-[35vw] md:mt-1 md:font-light'>NextJS | ReactJS | HTML/CSS/JS | Angular | React Native</p>
+                        <h2 className='text-white md:text-xl md:mt-3'>Back-End Development</h2>
+                        <p className='text-white md:text-left  md:text-md md:w-[35vw] md:mt-1 md:font-light'>Node | Python | C# | Solidity | Remix</p>
                     </div>
                     <div className='flex flex-col md:justify-end'>
 
