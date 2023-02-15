@@ -6,7 +6,6 @@ import logo from '../../assets/logo.svg';
 
 const MobileNavigation = () => {
 
-
     return (
         <>
             <div className="flex justify-center px-4 h-[9vh] items-center sm:h-[10vh] md:hidden">
