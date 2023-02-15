@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+# Kvshw Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This project was built using React and Tailwind.
+But Best is yet to come.
 ## Available Scripts
 
 In the project directory, you can run:
