@@ -15,25 +15,25 @@ const socialIcons = [
         defaultSource: GitHub,
         hoverSource: GitHub2,
         link: "https://github.com/kvshw",
-        className: "github-icon",
+        className: "",
     },
     {
         defaultSource: LinkedIn,
         hoverSource: LinkedIn2,
         link: "https://www.linkedin.com/in/kavishwa-bhashitha/",
-        className: "pl-2",
+        className: "pl-2 md:pl-8",
     },
     {
         defaultSource: Facebook,
         hoverSource: Facebook2,
         link: "https://www.facebook.com/kavishwa.bhashitha",
-        className: "pl-2",
+        className: "pl-2 md:pl-8",
     },
     {
         defaultSource: Twitter,
         hoverSource: Twitter2,
         link: "https://twitter.com/kvshw_",
-        className: "pl-2",
+        className: "pl-2 md:pl-8",
     },
 ];
 

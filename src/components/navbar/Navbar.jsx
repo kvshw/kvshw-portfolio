@@ -2,36 +2,37 @@ import React from 'react';
 import './navbar.css';
 import logo from '../../assets/logo.svg';
 import resume from '../../assets/Kavishwa Wendakoon Resume.pdf'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-    return (
-        // <div className='kvshw__navbar'>
-        //     <div className="kvshw__navbar-logo_container">
-        //         <Link to="/"><img src={logo} alt="" srcset="" /></Link>
-        //     </div>
-        //     <div className="kvshw__navbar-links_container">
-        //         <p><Link to="/about-me" >About me</Link></p>
-        //         <p><a href='#'>Portfolio</a></p>
-        //         <p><a href='#'>Blog</a></p>
-        //         <p><a href='#'>Contact me</a></p>
-        //         <a href={resume} download="Kavishwa Wendakoon Resume"><button className='resume'>Download Resume</button></a>
-        //     </div>
+    const location = useLocation();
 
-        // </div>
-        <div className='flex justify-between items-center mx-8 my-4'>
+    return (
+        <div className='flex justify-between items-center px-16 mt-[1vh] min-h-[9vh]'>
             <div>
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="" /></Link>
             </div>
-            <div className='flex text-white text-sm'>
-                <p className='mx-6'><Link to="/about-me" >About me</Link></p>
-                <p className='mx-6'><a href='#'>Portfolio</a></p>
-                <p className='mx-6'><a href='#'>Blog</a></p>
-                <p className='mx-6'><a href='#'>Contact me</a></p>
-                <a href={resume} download="Kavishwa Wendakoon Resume"><button className='resume'>Download Resume</button></a>
+            <div className='flex text-white text-sm items-center md:text-xs'>
+                <Link to="/about-me" className={`mx-6 ${location.pathname === '/about-me' ? 'active-link' : ''}`}>
+                    About me
+                </Link>
+                <Link to="/portfolio" className={`mx-6 ${location.pathname === '/portfolio' ? 'active-link' : ''}`}>
+                    Portfolio
+                </Link>
+                <Link to="/blog" className={`mx-6 ${location.pathname === '/blog' ? 'active-link' : ''}`}>
+                    Blog
+                </Link>
+                <Link to="/contact" className={`mx-6 ${location.pathname === '/contact' ? 'active-link' : ''}`}>
+                    Contact me
+                </Link>
+                <a href={resume} download="Kavishwa Wendakoon Resume">
+                    <button className='bg-gradient-to-r from-[#FF27DD] to-[#433AD1] py-2 px-6 rounded-md'>
+                        Download Resume
+                    </button>
+                </a>
             </div>
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;

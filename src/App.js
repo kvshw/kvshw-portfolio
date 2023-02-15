@@ -12,7 +12,7 @@ function App() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 786px)');
+    const mediaQuery = window.matchMedia('(max-width: 867px)');
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
@@ -25,7 +25,9 @@ function App() {
 
   return (
     <div className='App'>
+
       {isMobile ? <MobileNavigation /> : <Navbar />}
+
       <Routes>
         <Route exact path="/" element={<Header />} />
         <Route path="/about-me" element={<AboutMe />} />
