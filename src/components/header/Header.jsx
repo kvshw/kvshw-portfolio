@@ -55,7 +55,7 @@ const Header = () => {
             <div className='h-[84vh] w-screen grid  bg-right bg-no-repeat bg-mobile-header sm:h-[82vh] sm:bg-right md:hidden'  >
                 <div className='flex flex-col justify-center items-center '>
                     <h1 className='text-transparent text-center bg-gradient-to-r from-[#FF27DD] to-[#433AD1] bg-clip-text text-2xl font-bold sm:text-4xl'>Kavishwa Wendakoon</h1>
-                    <h2 className='text-white text-lg sm:text-3xl'>Transforming Complex Ideas into Elegant Code</h2>
+                    <h2 className='text-white text-lg sm:text-3xl text-center'>Transforming Complex Ideas into Elegant Code</h2>
                     <p className='text-white text-center px-8 py-2 text-sm sm:text-lg'>From complex ideas to elegant code - with a keen eye for detail and a passion for innovation,
                         Kavishwa brings your ideas to life one line of code at a time.</p>
                     <Socialicons />
