@@ -55,16 +55,18 @@ const Header = () => {
             <div className='h-[84vh] w-screen grid  bg-right bg-no-repeat bg-mobile-header sm:h-[82vh] sm:bg-right md:hidden'  >
                 <div className='flex flex-col justify-center items-center '>
                     <h1 className='text-transparent text-center bg-gradient-to-r from-[#FF27DD] to-[#433AD1] bg-clip-text text-2xl font-bold sm:text-4xl'>Kavishwa Wendakoon</h1>
-                    <h2 className='text-white text-lg sm:text-3xl'>Welcome to my Portfolio</h2>
-                    <p className='text-white text-center px-8 py-2 text-sm sm:text-lg'>My mission is to invoke a change in society using the knowledge I gained throughout last few years </p>
+                    <h2 className='text-white text-lg sm:text-3xl'>Transforming Complex Ideas into Elegant Code</h2>
+                    <p className='text-white text-center px-8 py-2 text-sm sm:text-lg'>From complex ideas to elegant code - with a keen eye for detail and a passion for innovation,
+                        Kavishwa brings your ideas to life one line of code at a time.</p>
                     <Socialicons />
                 </div>
             </div>
             <div className='hidden sm:hidden md:grid md:grid-cols-[65%_35%] md:text-white md:bg-desktop-header md:h-[88vh] md:bg-right bg-cover'>
                 <div className='flex flex-col md:justify-center md:pl-[15vw]'>
                     <h1 className='md:text-transparent md:text-left md:bg-gradient-to-r md:from-[#FF27DD] md:to-[#433AD1] md:bg-clip-text md:text-5xl md:font-bold '>Kavishwa Wendakoon</h1>
-                    <h2 className='text-white md:text-3xl md:mt-3'>Welcome to my Portfolio</h2>
-                    <p className='text-white md:text-left  md:text-lg md:w-[35vw] md:mt-3 md:font-light'>My mission is to invoke a change in society using the knowledge I gained throughout last few years </p>
+                    <h2 className='text-white md:text-3xl md:mt-3'>Transforming Complex Ideas into Elegant Code</h2>
+                    <p className='text-white md:text-left  md:text-lg md:w-[35vw] md:mt-3 md:font-light'>From complex ideas to elegant code - with a keen eye for detail and a passion for innovation,
+                        Kavishwa brings your ideas to life one line of code at a time.</p>
                 </div>
                 <div className='flex flex-col md:justify-end'>
                     <Socialicons />
