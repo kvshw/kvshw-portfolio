@@ -1,37 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/kvshw-logo.png';
 import resume from '../../assets/Kavishwa Wendakoon Resume.pdf'
-import { Link, useLocation } from 'react-router-dom';
+
+
+
+
+
 
 const Navbar = () => {
-    const location = useLocation();
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = () => {
+        setToggle(!toggle)
+
+    }
 
     return (
-        <div className='flex justify-between items-center px-16 mt-[1vh] min-h-[9vh]'>
-            <div>
-                <Link to="/"><img src={logo} alt="" /></Link>
-            </div>
-            <div className='flex text-white text-sm items-center md:text-xs'>
-                <Link to="/about-me" className={`mx-6 ${location.pathname === '/about-me' ? 'active-link' : ''}`}>
-                    About me
-                </Link>
-                <Link to="/portfolio" className={`mx-6 ${location.pathname === '/portfolio' ? 'active-link' : ''}`}>
-                    Portfolio
-                </Link>
-                <Link to="/blog" className={`mx-6 ${location.pathname === '/blog' ? 'active-link' : ''}`}>
-                    Blog
-                </Link>
-                <Link to="/contact" className={`mx-6 ${location.pathname === '/contact' ? 'active-link' : ''}`}>
-                    Contact me
-                </Link>
-                <a href={resume} download="Kavishwa Wendakoon Resume">
-                    <button className='bg-gradient-to-r from-[#FF27DD] to-[#433AD1] py-2 px-6 rounded-md'>
-                        Download Resume
-                    </button>
-                </a>
-            </div>
-        </div>
+
+        <>
+            <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black/50 fixed w-full">
+                <div class="container flex flex-wrap items-center justify-between mx-auto">
+
+                    <img src={logo} class="h-full ml-3 sm:h-9" alt="Flowbite Logo" />
+                    {/* <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Kvshw</span> */}
+
+                    <div class="flex md:order-2 items-center md:hidden">
+                        {/* <button type="button" class=" text-black px-8 py-1 bg-white text-xs h-[40px] rounded-3xl mr-2">Download Resume</button> */}
+                        <div onClick={handleToggle}>
+                            {toggle ? <i className="fa-sharp fa-solid fa-x text-white mr-3 text-[24px]"></i> : <i className="fa-sharp fa-solid fa-bars text-white mr-3 text-[24px]"></i>}
+
+                        </div>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </>
     )
 }
 
