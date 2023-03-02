@@ -48,9 +48,9 @@ const Aboutus = () => {
                         <img className='relative left-3 bottom-2' src={arrow} alt="" /> */}
                     </div>
                     <div className='flex flex-col justify-between h-[13vh] relative right-3 bottom-2'>
-                        <img src={LinkedIn} alt="" />
-                        <img src={GitHub} alt="" />
-                        <img src={FaceBook} alt="" />
+                        <a href='https://www.linkedin.com/in/kavishwa-bhashitha/' target="_blank"><img src={LinkedIn} alt="" /></a>
+                        <a href='https://github.com/kvshw'><img src={GitHub} alt="" /></a>
+                        <a href='https://www.facebook.com/kavishwa.bhashitha/' target="_blank"><img src={FaceBook} alt="" /></a>
                     </div>
 
                 </div>
