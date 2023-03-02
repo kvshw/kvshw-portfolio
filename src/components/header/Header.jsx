@@ -37,7 +37,7 @@ const Header = () => {
                         <button className='text-black px-8 py-2 bg-white rounded-3xl text-xs mt-[4vh]'>Download Resume</button>
                     </div>
                 </div>
-                <div className='bottom-end flex flex-row justify-between w-full absolute bottom-0 h-[25vh] items-end'>
+                <div className='bottom-end flex flex-row justify-between w-full absolute bottom-0 h-[100px] items-end'>
                     <div className=''>
                         <h4 className='text-white text-[10px] rotate-[-90deg] relative bottom-[70px] left-[-37.5px]'>SCROLL TO SEE MORE</h4>
                         <img className='relative left-3 bottom-2' src={arrow} alt="" />
