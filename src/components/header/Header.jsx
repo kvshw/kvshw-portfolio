@@ -39,7 +39,7 @@ const Header = () => {
                 </div>
                 <div className='bottom-end flex flex-row justify-between w-full absolute bottom-0 h-[100px] items-end'>
                     <div className=''>
-                        <h4 className='text-white text-[10px] rotate-[-90deg] absolute bottom-[110px] left-[-38px]'>SCROLL TO SEE MORE</h4>
+                        <h4 className='text-white text-[10px] rotate-[-90deg] absolute bottom-[110px] left-[-28px]'>SCROLL TO SEE MORE</h4>
                         <img className='absolute left-3 bottom-2' src={arrow} alt="" />
                     </div>
                     <div className='flex flex-col justify-between h-[13vh] relative right-3 bottom-2'>
