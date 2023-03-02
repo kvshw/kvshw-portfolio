@@ -1,4 +1,12 @@
 import React, { useState } from 'react'
+import arrow from '../../assets/down-arrow.png';
+import LinkedIn from '../../assets/linkedin 1.png';
+import GitHub from '../../assets/github 1.png';
+import FaceBook from '../../assets/facebook 1.png';
+import ReactBubble from '../../assets/REact bubble.png'
+import FeatherBubble from '../../assets/feather.png'
+import FacebookBubble from '../../assets/facebook bubble.png'
+import BitcoinBubble from '../../assets/bitcoin bubble.png'
 
 
 import './aboutme.css';
@@ -7,42 +15,44 @@ import Socialicons from '../socialIcons/Socialicons';
 const Aboutus = () => {
     return (
         <>
-            <div className='overflow-y-scroll '>
-                <div className='h-[84vh] w-screen grid  bg-[-35vw] bg-no-repeat bg-about-me-mobile sm:h-[82vh] sm:bg-right md:hidden'  >
-                    <div className='flex flex-col justify-center items-center '>
-                        <h1 className='text-transparent text-center bg-gradient-to-r from-[#FF27DD] to-[#433AD1] bg-clip-text text-2xl font-bold sm:text-4xl'>About Me</h1>
-                        {/* <h2 className='text-white text-lg sm:text-3xl'>Hey</h2> */}
-                        <p className='text-white text-center px-8 py-2 text-sm sm:text-lg'>Hi there! My name is Kavishwa and I am a skilled software engineer and social media marketer with over 5 years of experience in the industry. I have a strong background in both front-end and back-end development, as well as a deep understanding of social media platforms and how to effectively market products and services on them.</p>
-                        <Socialicons />
+            <div className='h-screen bg-about-me-mobile  bg-no-repeat flex flex-col justify-center  items-center bg-center bg-cover md:hidden sm:hidden'>
+                <div className='pl-10 pr-8 w-full'>
+                    <h1 className='text-5xl text-white font-semibold'>About me</h1>
+
+                    <div className='bg-cover grid grid-cols-2 gap-8 p-6 justify-items-center items-center'>
+                        <div class="w-[100px] h-[100px] bg-white bg-opacity-20 flex flex-col justify-center items-center px-4 pb-1 text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border">
+                            <img className='w-[35px] h-[35px] ' src={ReactBubble} alt="" />
+                            <h3 className='text-[10px] pt-2 text-white font-semibold'>Full-Stack Development</h3>
+                        </div>
+                        <div class="w-[100px] h-[100px] bg-white bg-opacity-20 flex flex-col justify-center items-center px-4 pb-1 text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border">
+                            <img className='w-[35px] h-[35px] ' src={FacebookBubble} alt="" />
+                            <h3 className='text-[10px] pt-2 text-white font-semibold'>Social Media Marketing</h3>
+                        </div>
+                        <div class="w-[100px] h-[100px] bg-white bg-opacity-20 flex flex-col justify-center items-center px-4 pb-1 text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border">
+                            <img className='w-[35px] h-[35px] ' src={FeatherBubble} alt="" />
+                            <h3 className='text-[10px] pt-2 text-white font-semibold'>Copywriting</h3>
+                        </div>
+                        <div class="w-[100px] h-[100px] bg-white bg-opacity-20 flex flex-col justify-center items-center px-4 pb-1 text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border">
+                            <img className='w-[35px] h-[35px] ' src={BitcoinBubble} alt="" />
+                            <h3 className='text-[10px] pt-2 text-white font-semibold'>Cryptocurrency</h3>
+                        </div>
+                    </div>
+                    <p className='text-sm text-white font-thin mt-[1vh] text-center px-3'>Hi there! I’m Kavishwa and I am a skilled software engineer and social media marketer with over 3 years of experience in the industry. I have a strong background in both front-end and back-end development, social media marketing and copywriting.</p>
+                    <div className='text-center'>
+                        <button className='text-black px-8 py-2 bg-white rounded-3xl text-xs mt-[4vh]'>Download Resume</button>
                     </div>
                 </div>
+                <div className='bottom-end flex flex-row justify-between w-full absolute bottom-[-100vh] h-[15vh] items-end'>
+                    <div className=''>
+                        {/* <h4 className='text-white text-[10px] rotate-[-90deg] relative bottom-[70px] left-[-37.5px]'>SCROLL TO SEE MORE</h4>
+                        <img className='relative left-3 bottom-2' src={arrow} alt="" /> */}
+                    </div>
+                    <div className='flex flex-col justify-between h-[13vh] relative right-3 bottom-2'>
+                        <img src={LinkedIn} alt="" />
+                        <img src={GitHub} alt="" />
+                        <img src={FaceBook} alt="" />
+                    </div>
 
-            </div>
-            <div className='md:grid md:grid-cols-2 md:w-screen md:overflow-x-scroll md:snap-x md:snap-mandatory'>
-                <div className=' md:snap-start hidden sm:hidden md:grid md:grid-cols-[65%_35%] w-screen  md:text-white md:bg-about-me md:h-[88vh] md:bg-right md:bg-cover'>
-                    <div className='flex flex-col md:justify-center md:pl-[15vw]'>
-                        <h1 className='md:text-transparent md:text-left md:bg-gradient-to-r md:from-[#FF27DD] md:to-[#433AD1] md:bg-clip-text md:text-5xl md:font-bold '>About Me</h1>
-                        {/* <h2 className='text-white md:text-3xl md:mt-3'>Welcome to my Portfolio</h2> */}
-                        <p className='text-white md:text-left  md:text-lg md:w-[35vw] md:mt-3 md:font-light'>Hi there! My name is Kavishwa and I am a skilled software engineer and social media marketer with over 5 years of experience in the industry. I have a strong background in both front-end and back-end development, as well as a deep understanding of social media platforms and how to effectively market products and services on them. I am always seeking new challenges and opportunities to grow my skills and help businesses succeed.</p>
-                    </div>
-                    <div className='flex flex-col md:justify-end'>
-
-                    </div>
-                </div>
-                <div className='h md:snap-start hidden sm:hidden md:grid md:grid-cols-[65%_35%] w-screen ml-[50vw] md:text-white md:bg-technology md:h-[88vh] md:bg-right md:bg-cover'>
-                    <div className='flex flex-col md:justify-center md:pl-[15vw]'>
-                        <h1 className='md:text-transparent md:text-left md:bg-gradient-to-r md:from-[#FF27DD] md:to-[#433AD1] md:bg-clip-text md:text-5xl md:font-bold '>Technologies</h1>
-                        <h2 className='text-white md:text-xl md:mt-3'>Front-End Development</h2>
-                        <p className='text-white md:text-left  md:text-md md:w-[35vw] md:mt-1 md:font-light'>NextJS | ReactJS | HTML/CSS/JS | Angular | React Native</p>
-                        <h2 className='text-white md:text-xl md:mt-3'>Back-End Development</h2>
-                        <p className='text-white md:text-left  md:text-md md:w-[35vw] md:mt-1 md:font-light'>Node | Python | C# | Solidity | Remix</p>
-                    </div>
-                    <div className='flex flex-col md:justify-end'>
-
-                    </div>
-                </div>
-                <div className='hidden md:block md:absolute md:right-[20vw] md:bottom-[2vh]'>
-                    <Socialicons />
                 </div>
             </div>
         </>
