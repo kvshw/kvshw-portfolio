@@ -10,7 +10,13 @@ module.exports = {
         'desktop-header': "url('../src/assets/kvshw.png')",
         'about-me': "url('../src/assets/about-me.png')",
         'about-me-mobile': "url('../src/assets/about-me-mobile.png')",
-        'technology': "url('../src/assets/technology.png')"
+        'technology': "url('../src/assets/technology.png')",
+        'skills': "url('../src/assets/skills_bg.png')",
+        'portfolio': "url('../src/assets/portfolio.png')",
+        'blog': "url('../src/assets/blog.png')",
+        'contact': "url('../src/assets/contact.png')",
+
+
 
       },
       colors: {
