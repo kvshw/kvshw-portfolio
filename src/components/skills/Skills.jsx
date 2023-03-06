@@ -19,7 +19,7 @@ const Skills = () => {
                     <h1 className='text-5xl text-white font-semibold'>Skills</h1>
 
                     <div className='bg-cover grid grid-cols-4 gap-4 my-6 min-h-[20vh] p-6 justify-items-center bg-white bg-opacity-20 flex-col justify-center items-center px-4 pb-1 text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border'>
-                        <div>
+                        <div className='w-[60px] h-[60px] bg-white bg-opacity-20 flex flex-col justify-center items-center  text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border'>
                             <img className='w-[50px]' src={ReactLogo} alt="" />
                         </div>
                         <div>
@@ -44,12 +44,20 @@ const Skills = () => {
                             <img className='w-[50px]' src={TailwindLogo} alt="" />
                         </div>
                     </div>
-                    <div className='bg-cover grid grid-cols-1  my-6 min-h-[40px] w-full  justify-items-center bg-white bg-opacity-20 flex-col justify-center items-center  text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border'>
-                        <h3 className='text-white'>Front-End Development</h3>
+
+                    <div className='max-h-48 min-h-48 bg-white bg-opacity-0 p-2 flex-col justify-center items-center  text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border pb-2 pt-2 px-2'>
+                        <p className='text-sm text-white font-thin  text-center mt-0 p-0'>React.js is an open-source JavaScript library for building user interfaces. It was developed by Facebook and is now widely used by developers to create dynamic and responsive web applications.</p>
                     </div>
-                    {/* <p className='text-sm text-white font-thin mt-[1vh] text-center px-3'>Hi there! I’m Kavishwa and I am a skilled software engineer and social media marketer with over 3 years of experience in the industry. I have a strong background in both front-end and back-end development, social media marketing and copywriting.</p> */}
+                    <div className='bg-cover grid grid-cols-3 gap-2 my-6 min-h-[40px] w-full items-center justify-items-center '>
+                        <div className='bg-white col-span-2 w-full bg-opacity-20 p-2 flex-col justify-center items-center  text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border'>
+                            <h3 className='text-white text-[14px]'>Front-End Development</h3>
+                        </div>
+                        <div className='bg-white bg-opacity-0 p-2 flex-col justify-center items-center  text-center backdrop-blur-lg rounded-xl drop-shadow-xl border-[#9D9D9D] border'>
+                            <h3 className='text-white text-[8px]'>Back-End Development</h3>
+                        </div>
+                    </div>
                     <div className='text-center'>
-                        <button className='text-black px-8 py-2 bg-white rounded-3xl text-xs mt-[1vh]'>Download Resume</button>
+                        <button className='text-black px-8 py-2 bg-white rounded-3xl text-xs mt-[2vh]'>Download Resume</button>
                     </div>
                 </div>
                 <div className='bottom-end flex flex-row justify-between w-full absolute bottom-[-200vh] h-[100px] items-end'>
