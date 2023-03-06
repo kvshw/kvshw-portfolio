@@ -6,6 +6,7 @@ import arrow from '../../assets/down-arrow.png';
 import LinkedIn from '../../assets/linkedin 1.png';
 import GitHub from '../../assets/github 1.png';
 import FaceBook from '../../assets/facebook 1.png';
+import Resume from '../../assets/Kavishwa_Wendakoon_CV.pdf'
 
 
 
@@ -34,7 +35,7 @@ const Header = () => {
                         I bring your ideas to life one line
                         of code at a time.</p>
                     <div className='self-baseline'>
-                        <button className='text-black px-8 py-2 bg-white rounded-3xl text-xs mt-[4vh]'>Download Resume</button>
+                        <button className='text-black px-8 py-2 bg-white rounded-3xl text-xs mt-[4vh]' href={Resume} download="Kavishwa Wendakoon CV">Download Resume</button>
                     </div>
                 </div>
                 <div className='bottom-end flex flex-row justify-between w-full absolute bottom-0 h-[100px] items-end'>

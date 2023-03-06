@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../../assets/kvshw-logo.png';
-import resume from '../../assets/Kavishwa Wendakoon Resume.pdf'
+// import resume from '../../assets/Kavishwa Wendakoon Resume.pdf'
 
 
 const Navbar = () => {
