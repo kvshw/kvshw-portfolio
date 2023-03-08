@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
 
         <>
-            <nav className=" border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-black/50 fixed w-full">
+            <nav className="z-[1000] border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-black/50 fixed w-full">
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
 
                     <img src={logo} className="h-full ml-3 sm:h-9" alt="Flowbite Logo" />
